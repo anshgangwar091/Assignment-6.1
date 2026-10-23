@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model Inspection</title>
+    <!-- External Stylesheet -->
+    <link rel="stylesheet" href="box-model.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>CSS Box Model Inspection</h1>
+        <p>Exploring content, padding, border, margin, and box-sizing properties.</p>
+    </header>
+
+    <main>
+        <!-- 1. Box 1: Compact Spacing -->
+        <section class="box box-one">
+            <h2>Box 1: Compact Spacing</h2>
+            <p>This box features tight padding, a thin solid border, and moderate external margins.</p>
+        </section>
+
+        <!-- 2. Box 2: Generous Spacing -->
+        <section class="box box-two">
+            <h2>Box 2: Generous Spacing</h2>
+            <p>This box features wide padding, a thick dashed border, and larger vertical margins.</p>
+        </section>
+
+        <!-- 3. Box 3: Custom Accent Box -->
+        <section class="box box-three">
+            <h2>Box 3: Accent Box</h2>
+            <p>This box demonstrates custom background colors and medium padding/border widths.</p>
+        </section>
+
+        <!-- Box-Sizing Comparison Section -->
+        <section class="comparison-section">
+            <h2>Box-Sizing Behavior Comparison</h2>
+            <p>Both boxes below have an explicit width of <strong>300px</strong>, <strong>20px</strong> of padding, and a <strong>10px</strong> border.</p>
+            
+            <div class="sizing-demo content-box-demo">
+                <p><strong>Content-Box:</strong> Total width = 300px + 40px (padding) + 20px (border) = 360px wide!</p>
+            </div>
+            
+            <div class="sizing-demo border-box-demo">
+                <p><strong>Border-Box:</strong> Total width remains exactly 300px wide (padding and border fit inside).</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Web Development Practice</p>
+    </footer>
+
+</body>
+</html>
